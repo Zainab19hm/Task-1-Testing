@@ -6,6 +6,7 @@ class TestMain(unittest.TestCase):
         self.assertEqual(add_numbers(2, 3), 5)
         self.assertEqual(add_numbers(-1, 1), 0)
         self.assertAlmostEqual(add_numbers(0.1, 0.2), 0.3)
+        self.assertAlmostEqual(add_numbers(-1, -2), -3)
 
     def test_divide_numbers(self):
         self.assertEqual(divide_numbers(10, 2), 5)
